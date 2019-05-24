@@ -22,3 +22,13 @@ Route::get('/about', function () {
     return view('about');
 });
 
+
+
+Route::get('/api/flights/{id}', function ($id) {
+    return App\Cars::findOrFail($id);
+});
+
+
+Route::get('/cars', 'Cars\CarsController@index');
+
+

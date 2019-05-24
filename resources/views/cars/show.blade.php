@@ -1,16 +1,8 @@
-{{-- @extends('layouts.master')
-
-@section('title', $post->title)
-
-
-@section('content')
 
     <h1>
-        {{ $post->title }}
+        {{ $cars->title }}
     </h1>
     
-    <p>
-        {{ $post->body }}
-    </p>
-
-@endsection --}}
+    {{-- <p>
+        {{ $cars->producer }}
+    </p> --}}
