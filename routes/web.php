@@ -24,11 +24,12 @@ Route::get('/about', function () {
 
 
 
-Route::get('/api/flights/{id}', function ($id) {
+Route::get('/api/cars/{id}', function ($id) {
     return App\Cars::findOrFail($id);
 });
 
 
 Route::get('/cars', 'Cars\CarsController@index');
+Route::get('/cars/{id}', 'Cars\CarsController@show');
 
 
